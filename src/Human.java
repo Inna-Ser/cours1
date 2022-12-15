@@ -5,21 +5,21 @@ public class Human {
     public String jobTitle;
 
     Human(String name, String town, int yearOfBirth, String jobTitle) {
-        if (name != null) {
-            this.name = name;
-        } else
+        if (name == null || name.isEmpty()) {
             this.name = "Информация не указана";
-        if (town != null) {
-            this.town = town;
         } else
+            this.name = name;
+        if (town == null || town.isEmpty()) {
             this.town = "Информация не указана";
+        } else
+            this.town = town;
         if (yearOfBirth >= 0) {
             this.yearOfBirth = yearOfBirth;
         }
-        if (jobTitle != null) {
-            this.jobTitle = jobTitle;
-        } else
+        if (jobTitle == null || jobTitle.isEmpty()) {
             this.jobTitle = "Информация не указана";
+        } else
+            this.jobTitle = jobTitle;
     }
 
     void hello() {

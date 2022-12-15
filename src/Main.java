@@ -2,7 +2,7 @@ public class Main {
     // task 1
     public static void main(String[] args) {
 
-        Human maksim = new Human(null, "Минск", -1988, "бренд-менеджер");
+        Human maksim = new Human("Максим", "Минск", 1988, "бренд-менеджер");
         maksim.hello();
 
         Human anna = new Human("Аня", "Москва", 1993, "методист образовательных программ");
